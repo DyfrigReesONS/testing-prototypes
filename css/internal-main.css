@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@import "fake-modal.css";
+
+.table--cell {
+    padding: 1rem 0 1rem 1rem;
+    line-height: inherit;
+}
+
+.breadcrumb__item {
+    margin: 0 .15rem 0 0;
+}
+
+.status.status--success:before {
+    background-color: #12c864;
+    border: 3px solid #12c864;
+}
+
+.margin-left-s {
+  margin-left: 1rem;
+}
+
+td.edit {
+  padding: 0.75rem 0 0.75rem 1.5rem;
+}
