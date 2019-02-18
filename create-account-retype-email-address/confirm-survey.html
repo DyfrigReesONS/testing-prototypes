@@ -77,12 +77,12 @@
         <div class="grid__col col-8@m u-mb-m">
             <main role="main" id="main" class="page__main">
               <section>
-                <form id="enrolment-code" action="../create-account-retype-email-address/enter-account-details.html" method="GET" class="form">
+                <form id="enrolment-code" action="enter-account-details.html" method="GET" class="form">
                   <h1 class="u-fs-l">Confirm organisation and survey details</h1>
                   <div class="u-mb-m">
                     <dl class="metadata metadata__list grid grid--gutterless" title="Item metadata" aria-label="Item metadata">
                       <dt class="metadata__term grid__col col-4@m u-fs-r--b">Enrolment code:</dt>
-                      <dd class="metadata__value grid__col col-8@m">sntvynlcj5vs</dd>
+                      <dd class="metadata__value grid__col col-8@m" id="enrolmentCode"></dd>
                       <dt class="metadata__term grid__col col-4@m u-fs-r--b">Organisation:</dt>
                       <dd class="metadata__value grid__col col-8@m">PC UNIVERSE</dd>
                       <dt class="metadata__term grid__col col-4@m u-fs-r--b">Trading as:</dt>
@@ -126,6 +126,16 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.ons.gov.uk/sdc/v2.0.0/scripts/bundle.min.js"></script>
+
+<script>
+  function getQueryStringValue (key) {  
+    return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1")); 
+  }
+</script>
+
+<script>
+  document.getElementById("enrolmentCode").innerHTML = getQueryStringValue("enrolmentCode");
+</script>
 
 </body>
 </html>

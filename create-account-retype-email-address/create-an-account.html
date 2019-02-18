@@ -74,7 +74,7 @@
 <!–– Start of main content ––>
 <div class="container">
     <div class="grid grid--gutterless">
-        <div class="grid__col col-12@s">
+        <div class="grid__col col-12@s u-mb-m">
             <main role="main" id="main" class="page__main">
               <section>
                 <form id="enrolment-code" action="confirm-survey.html" method="GET" class="form">
@@ -87,10 +87,8 @@
                   </div>
 
                   <div class="btn-group">
-                    <button type="submit" class="btn btn-group__btn u-mb-s">Continue</button>
-                  </div>
-                  <div class="u-mb-m">
-                    <a href="sign-in.html">Cancel and return to sign in</a>
+                    <button type="submit" class="btn btn-group__btn">Continue</button>
+                    <button type="button" class="btn btn--secondary btn-group__btn" onclick="window.location.href = '../sign-in.html';">Cancel</button>
                   </div>
 
                 </form>
