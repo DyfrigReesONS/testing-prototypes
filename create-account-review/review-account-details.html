@@ -79,7 +79,7 @@
               <section>
                 <form id="enrolment-code" action="check-your-email-address.html" method="GET" class="form">
 
-                  <h1 class="u-fs-l u-mb-m">Check your answers before creating your account</h1>
+                  <h1 class="u-fs-l u-mb-m">Review account details before creating your account</h1>
 
                   <div class="summary">
                     
@@ -103,7 +103,11 @@
                           </tr>
                           <tr class="summary__row">
                             <td class="summary__question">Email address</td>
-                            <td class="summary__answer u-fs-r--b" id="emailAddress"></td>
+                            <td class="summary__answer u-fs-r--b">
+                              <span id="emailAddress"></span>
+                              <br>
+                              <span style="font-weight: initial;">Your account activation email will be sent here</span>
+                            </td>
                             <td class="summary__action">
                             <a onclick="history.back();" class="summary__button" aria-label="Change answer">Change</a>
                             </td>
@@ -133,7 +137,7 @@
                   </div>
 
                   <div class="btn-group">
-                    <button type="submit" class="btn btn-group__btn u-mb-s">Save and create account</button>
+                    <button type="submit" class="btn btn-group__btn u-mb-s"><!--Save and create account-->Confirm and send activation email</button>
                   </div>
                   <div class="u-mb-m">
                     <a href="sign-in.html">Cancel and return to sign in</a>
