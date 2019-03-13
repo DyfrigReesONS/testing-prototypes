@@ -78,25 +78,25 @@
             <main role="main" id="main" class="page__main">
               <section>
                 <div class="u-mb-s">
-                  <a href="confirm-survey.html">Previous</a>
+                  <a href="confirm-survey.html">Back</a>
                 </div>
                 <form id="enrolment-code" action="review-account-details.html" method="GET" class="form">
                   <input id="csrf_token" name="csrf_token" type="hidden" value="">
                   <h1 class="u-fs-l">Enter your account details</h1>
                   <h2 class="section__title u-fs-m">Your name</h2>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">First name</label>
+                  <div class="field u-mb-m" id="changeFirstName">
+                    <label class="label" for="firstName">First name</label>
                     <input class="input input--text input-type__input" id="firstName" name="firstName" type="text" value="">
                   </div>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Last name</label>
+                  <div class="field u-mb-m" id="changeLastName">
+                    <label class="label" for="lasttName">Last name</label>
                     <input class="input input--text input-type__input" id="lasttName" name="lastName" type="text" value="">
                   </div>
 
                   <h2 class="section__title u-fs-m">Email address</h2>
                   <p>We'll send you an email so you can activate your account</p>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Enter your email address</label>
+                  <div class="field u-mb-m" id="changeEmailAddress">
+                    <label class="label" for="emailAddress">Enter your email address</label>
                     <input class="input input--text input-type__input" id="emailAddress" name="emailAddress" type="text" value="">
                   </div>
 
@@ -108,24 +108,24 @@
                     <li>at least one capital letter</li>
                     <li>at least one number</li>
                   </ul>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Create a password</label>
+                  <div class="field u-mb-m" id="changePassword">
+                    <label class="label" for="password">Create a password</label>
                     <input class="input input--text input-type__input js-new-password" id="password" name="" type="password" value="">
                   </div>
                   <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Re-type your password</label>
+                    <label class="label" for="passwordRetype">Re-type your password</label>
                     <input class="input input--text input-type__input js-confirm-new-password" id="passwordRetype" name="" type="password" value="">
                   </div>
 
                   <h2 class="section__title u-fs-m">Phone number</h2>
                   <p>We may sometimes need to call you to discuss information you have provided</p>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Enter your phone number</label>
+                  <div class="field u-mb-m" id="changePhoneNumber">
+                    <label class="label" for="phoneNumber">Enter your phone number</label>
                     <input class="input input--text input-type__input" id="phoneNumber" name="phoneNumber" type="text" value="">
                   </div>
 
                   <div class="btn-group">
-                    <button type="submit" class="btn btn-group__btn u-mb-s">Review account details</button>
+                    <button type="submit" class="btn btn-group__btn u-mb-s">Check account details</button>
                   </div>
                   <div class="u-mb-m">
                     <a href="sign-in.html">Cancel and return to sign in</a>
