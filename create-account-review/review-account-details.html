@@ -16,7 +16,7 @@
 	<link rel="manifest" href="../img/favicons/manifest.json">
   <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/v2.0.0/css/responsive.css">
-	<link rel="stylesheet" href="./css/internal-main.css" media="all">
+	<link rel="stylesheet" href="../css/internal-main.css" media="all">
 	<!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <![endif]-->
@@ -77,6 +77,9 @@
         <div class="grid__col u-mb-m">
             <main role="main" id="main" class="page__main">
               <section>
+                <div class="u-mb-s">
+                  <a href="enter-account-details.html">Previous</a>
+                </div>
                 <form id="enrolment-code" action="check-your-email-address.html" method="GET" class="form">
 
                   <h1 class="u-fs-l u-mb-m">Check your answers before creating your account</h1>
@@ -106,7 +109,7 @@
                             <td class="summary__answer u-fs-r--b">
                               <span id="emailAddress"></span>
                               <br>
-                              <span style="font-weight: initial;">Your account activation email will be sent here</span>
+                              <span style="font-weight: initial;">Your account activation link will be sent here</span>
                             </td>
                             <td class="summary__action">
                             <a href="enter-account-details.html" class="summary__button" aria-label="Change answer">Change</a>
@@ -137,11 +140,11 @@
                   </div>
 
                   <div class="btn-group">
-                    <button type="submit" class="btn btn-group__btn u-mb-s"><!--Save and create account-->Save and send activation email</button>
+                    <button type="submit" class="btn btn-group__btn u-mb-s"><!--Save and create account-->Create account</button>
                   </div>
-                  <div class="u-mb-m">
+                  <!--<div class="u-mb-m">
                     <a href="sign-in.html">Cancel and return to sign in</a>
-                  </div>
+                  </div>-->
 
                 </form>
 

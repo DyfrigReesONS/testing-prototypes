@@ -11,12 +11,13 @@
   <meta name="author" content="Survey Data Collection team for ONS" />
   <meta name="description" content="ONS Business Surveys" />
   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="../img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="../img/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="../img/favicons/manifest.json">
+  <link rel="icon" type="image/png" href="../img/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../img/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="../img/favicons/manifest.json">
   <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/v2.0.0/css/responsive.css">
-	<link rel="stylesheet" href="./css/internal-main.css" media="all">
+  <link rel="stylesheet" type="text/css" href="https://ons-design-system.netlify.com/css/responsive.css">
+  <link rel="stylesheet" href="../css/internal-main.css" media="all">
 	<!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <![endif]-->
@@ -78,7 +79,7 @@
             <main role="main" id="main" class="page__main">
               <section>
                 <div class="u-mb-s">
-                  <a href="confirm-survey.html">Back</a>
+                  <a href="confirm-survey.html">Previous</a>
                 </div>
                 <form id="enrolment-code" action="review-account-details.html" method="GET" class="form">
                   <input id="csrf_token" name="csrf_token" type="hidden" value="">
@@ -94,7 +95,7 @@
                   </div>
 
                   <h2 class="section__title u-fs-m">Email address</h2>
-                  <p>We'll send you an email so you can activate your account</p>
+                  <p>We'll send your account activation link to this email address</p>
                   <div class="field u-mb-m" id="changeEmailAddress">
                     <label class="label" for="emailAddress">Enter your email address</label>
                     <input class="input input--text input-type__input" id="emailAddress" name="emailAddress" type="text" value="">
@@ -118,18 +119,21 @@
                   </div>
 
                   <h2 class="section__title u-fs-m">Phone number</h2>
-                  <p>We may sometimes need to call you to discuss information you have provided</p>
+                  <p>We'll use this number if we need to discuss any survey information provide</p>
                   <div class="field u-mb-m" id="changePhoneNumber">
-                    <label class="label" for="phoneNumber">Enter your phone number</label>
-                    <input class="input input--text input-type__input" id="phoneNumber" name="phoneNumber" type="text" value="">
+                    <label class="label" for="phoneNumber">Enter your phone number
+                      <br>
+                      <span class="label__description">For international numbers include the country code</span>
+                    </label>
+                    <input class="input input--text input-type__input" id="phoneNumber" name="phoneNumber" type="tel" autocomplete="tel">
                   </div>
 
                   <div class="btn-group">
                     <button type="submit" class="btn btn-group__btn u-mb-s">Check account details</button>
                   </div>
-                  <div class="u-mb-m">
+                  <!--<div class="u-mb-m">
                     <a href="sign-in.html">Cancel and return to sign in</a>
-                  </div>
+                  </div>-->
 
                 </form>
 
