@@ -80,7 +80,7 @@
                 <h1 class="u-fs-l">Almost done...</h1>
                 <div class="u-mb-m">
                   <p>We've sent an email to <strong name="emailAddress" id="emailAddress"></strong></p>
-                  <p>Please follow the link in the email to confirm your email address and finish setting up your account.</p>
+                  <p>Follow the link in the email to confirm your email address and finish setting up your account.</p>
                 </div>
 
                 <div class="collapsible collapsible--simple js-collapsible js-collapsible-simple">
@@ -88,7 +88,7 @@
                     <h3 class="collapsible__title js-collapsible-title icon--collapsible-simple" data-ga="click" data-ga-category="definition" data-ga-action="Open panel" data-ga-label="What is a photovoltaic system?">Help with email</h3>
                     <div class="collapsible__body js-collapsible-body">
                       <p>Email not arrived? It might be in your spam folder.</p>
-                      <p>If it doesn’t arrive in the next 15 minutes, please call <a href="tel:03001234931">0300 1234 931</a></p>
+                      <p>If it doesn’t arrive in the next 15 minutes, call us on <a href="tel:03001234931">0300 1234 931</a></p>
                       <button class="btn--secondary btn--small js-collapsible-close u-no-js-hide" data-ga="click" data-ga-category="definition" data-ga-action="Close panel" data-ga-label="What is a photovoltaic system?">Hide this</button>
                     </div>
                   </div>
@@ -120,31 +120,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.ons.gov.uk/sdc/v2.0.0/scripts/bundle.min.js"></script>
 
+
 <script>
   function getQueryStringValue (key) {  
-    return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
+    return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1")); 
   }
 </script>
 
 <script>
   document.getElementById("emailAddress").innerHTML = getQueryStringValue("emailAddress");
-</script>
-
-<script type="text/javascript">
-    function jump() {
-      var selected = document.getElementsByName('branching');
-
-    for(var i=0; i<selected.length; i++) {
-      var value = selected[i].value;
-      if (selected[i].checked) {
-        if (value === 'yes') {
-          window.location.href = 'check-your-email-address.html' + window.location.search;
-        } else {
-          window.location.href = 'enter-account-details.html';
-        }
-      } 
-    }
-  }
 </script>
 
 </body>
