@@ -7,28 +7,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Enter account details | Survey Data Collection</title>
+  <title>Sign in | Survey Data Collection</title>
   <meta name="author" content="Survey Data Collection team for ONS" />
   <meta name="description" content="ONS Business Surveys" />
   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="../img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="../img/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="../img/favicons/manifest.json">
+  <link rel="icon" type="image/png" href="../img/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../img/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="../img/favicons/manifest.json">
   <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/v2.0.0/css/responsive.css">
-  <link rel="stylesheet" type="text/css" href="https://ons-design-system.netlify.com/css/responsive.css">
-	<link rel="stylesheet" href="../css/internal-main.css" media="all">
-	<!--[if lt IE 9]>
+  <link rel="stylesheet" href="./css/internal-main.css" media="all">
+  <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <![endif]-->
   <!--[if gt IE 8]><!-->
   <script nonce="5lO8T0S8jHjwtrtd">document.documentElement.className = document.documentElement.className.replace('no-js','has-js')</script>
   <!--<![endif]-->
 </head>
-
-<style type="text/css">
-  
-</style>
 
 <body>
 
@@ -78,70 +73,31 @@
 
 <!–– Start of main content ––>
 <div class="container">
-    <div class="grid grid--gutterless">
-        <div class="grid__col col-12@s u-mb-m">
+    <div class="grid grid--gutterless">=
+        <div class="grid__col col-8@s">
             <main role="main" id="main" class="page__main">
-              <section>
-                <div class="u-mb-s">
-                  <a href="../index.html">Previous</a>
-                </div>
-                <form id="enrolment-code" action="" method="GET" class="form">
-                  <input id="csrf_token" name="csrf_token" type="hidden" value="">
-                  <h1 class="u-fs-l">Enter your account details</h1>
-                  <h2 class="section__title u-fs-m">Your name</h2>
+              <p>New to the service? <a href="create-an-account.html">Create an account</a></p>
+              <form method="GET" action="../to-do.html" class="form" novalidate>
+                  <h1 class="u-fs-xl">Sign in</h1>
                   <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">First name</label>
-                    <input class="input input--text input-type__input" id="firstName" name="firstName" type="text" value="">
+                      <label class="label u-fs-r--b">Email address</label>
+                      <input class="input input--text input-type__input" required type="emailAddress">
                   </div>
                   <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Last name</label>
-                    <input class="input input--text input-type__input" id="lasttName" name="lastName" type="text" value="">
+                    <label class="label u-fs-r--b" for="inputPassword" id="inputPasswordLabel">Password</label>
+                    <div class="field--toggle">
+                        <label class="label label--inline u-fs-r field__label" for="showPasswordToggle">Show password</label>
+                        <input id="showPasswordToggle" class="field__input input input--checkbox" type="checkbox" />
+                    </div>
+                    <input id="inputPassword" type="password" class="input input--text" aria-describedby="inputPasswordLabel" />
                   </div>
-
-                  <h2 class="section__title u-fs-m">Email address</h2>
-                  <p>We'll send you an email so you can activate your account</p>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Enter your email address</label>
-                    <input class="input input--text input-type__input" id="emailAddress" name="emailAddress" type="text" value="">
+                  <div class="u-mb-l">
+                    <p><a href="#">Forgot password?</a></p>
                   </div>
-
-                  <h2 class="section__title u-fs-m">Create a password</h2>
-                  <p>Your password must have:</p>
-                  <ul>
-                    <li>at least 8 characters </li>
-                    <li>at least one symbol (eg ?!£%) </li>
-                    <li>at least one capital letter</li>
-                    <li>at least one number</li>
-                  </ul>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Create a password</label>
-                    <input class="input input--text input-type__input js-new-password" id="password" name="" type="password" value="">
+                  <div class="u-mb-l">
+                    <button class="btn btn--primary venus" type="submit">Sign in</button>
                   </div>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Re-type your password</label>
-                    <input class="input input--text input-type__input js-confirm-new-password" id="passwordRetype" name="" type="password" value="">
-                  </div>
-
-                  <h2 class="section__title u-fs-m">Phone number</h2>
-                  <p>We'll use this number if we need to discuss any survey information provided</p>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Enter your phone number
-                      <br>
-                      <span class="label__description">For international numbers include the country code</span>
-                    </label>
-                    <input class="input input--text input-type__input" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
-                  </div>
-
-                  <div class="btn-group">
-                    <button type="submit" class="btn btn-group__btn u-mb-s">Review account details</button>
-                  </div>
-                  <div class="u-mb-m">
-                    <a href="../index.html">Cancel and return to sign in</a>
-                  </div>
-
-                </form>
-
-              </section>
+              </form>
             </main>
         </div>
     </div>

@@ -7,28 +7,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Enter account details | Survey Data Collection</title>
+  <title>Check your email address | Survey Data Collection</title>
   <meta name="author" content="Survey Data Collection team for ONS" />
   <meta name="description" content="ONS Business Surveys" />
   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="../img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="../img/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="../img/favicons/manifest.json">
+  <link rel="icon" type="image/png" href="../img/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../img/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="../img/favicons/manifest.json">
   <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/v2.0.0/css/responsive.css">
-  <link rel="stylesheet" type="text/css" href="https://ons-design-system.netlify.com/css/responsive.css">
-	<link rel="stylesheet" href="../css/internal-main.css" media="all">
-	<!--[if lt IE 9]>
+  <link rel="stylesheet" href="./css/internal-main.css" media="all">
+  <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <![endif]-->
   <!--[if gt IE 8]><!-->
   <script nonce="5lO8T0S8jHjwtrtd">document.documentElement.className = document.documentElement.className.replace('no-js','has-js')</script>
   <!--<![endif]-->
 </head>
-
-<style type="text/css">
-  
-</style>
 
 <body>
 
@@ -79,67 +74,25 @@
 <!–– Start of main content ––>
 <div class="container">
     <div class="grid grid--gutterless">
-        <div class="grid__col col-12@s u-mb-m">
+        <div class="grid__col col-8@m u-mb-m">
             <main role="main" id="main" class="page__main">
               <section>
-                <div class="u-mb-s">
-                  <a href="../index.html">Previous</a>
+                <h1 class="u-fs-l">Almost done...</h1>
+                <div class="u-mb-m">
+                  <p>We've sent an email to <strong name="emailAddress" id="emailAddress"></strong></p>
+                  <p>Please follow the link in the email to confirm your email address and finish setting up your account.</p>
                 </div>
-                <form id="enrolment-code" action="" method="GET" class="form">
-                  <input id="csrf_token" name="csrf_token" type="hidden" value="">
-                  <h1 class="u-fs-l">Enter your account details</h1>
-                  <h2 class="section__title u-fs-m">Your name</h2>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">First name</label>
-                    <input class="input input--text input-type__input" id="firstName" name="firstName" type="text" value="">
-                  </div>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Last name</label>
-                    <input class="input input--text input-type__input" id="lasttName" name="lastName" type="text" value="">
-                  </div>
 
-                  <h2 class="section__title u-fs-m">Email address</h2>
-                  <p>We'll send you an email so you can activate your account</p>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Enter your email address</label>
-                    <input class="input input--text input-type__input" id="emailAddress" name="emailAddress" type="text" value="">
+                <div class="collapsible collapsible--simple js-collapsible js-collapsible-simple">
+                  <div class="js-collapsible-content">
+                    <h3 class="collapsible__title js-collapsible-title icon--collapsible-simple" data-ga="click" data-ga-category="definition" data-ga-action="Open panel" data-ga-label="What is a photovoltaic system?">Help with email</h3>
+                    <div class="collapsible__body js-collapsible-body">
+                      <p>Email not arrived? It might be in your spam folder.</p>
+                      <p>If it doesn’t arrive in the next 15 minutes, please call <a href="tel:03001234931">0300 1234 931</a></p>
+                      <button class="btn--secondary btn--small js-collapsible-close u-no-js-hide" data-ga="click" data-ga-category="definition" data-ga-action="Close panel" data-ga-label="What is a photovoltaic system?">Hide this</button>
+                    </div>
                   </div>
-
-                  <h2 class="section__title u-fs-m">Create a password</h2>
-                  <p>Your password must have:</p>
-                  <ul>
-                    <li>at least 8 characters </li>
-                    <li>at least one symbol (eg ?!£%) </li>
-                    <li>at least one capital letter</li>
-                    <li>at least one number</li>
-                  </ul>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Create a password</label>
-                    <input class="input input--text input-type__input js-new-password" id="password" name="" type="password" value="">
-                  </div>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Re-type your password</label>
-                    <input class="input input--text input-type__input js-confirm-new-password" id="passwordRetype" name="" type="password" value="">
-                  </div>
-
-                  <h2 class="section__title u-fs-m">Phone number</h2>
-                  <p>We'll use this number if we need to discuss any survey information provided</p>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Enter your phone number
-                      <br>
-                      <span class="label__description">For international numbers include the country code</span>
-                    </label>
-                    <input class="input input--text input-type__input" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
-                  </div>
-
-                  <div class="btn-group">
-                    <button type="submit" class="btn btn-group__btn u-mb-s">Review account details</button>
-                  </div>
-                  <div class="u-mb-m">
-                    <a href="../index.html">Cancel and return to sign in</a>
-                  </div>
-
-                </form>
+                </div>
 
               </section>
             </main>
@@ -166,6 +119,33 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.ons.gov.uk/sdc/v2.0.0/scripts/bundle.min.js"></script>
+
+<script>
+  function getQueryStringValue (key) {  
+    return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
+  }
+</script>
+
+<script>
+  document.getElementById("emailAddress").innerHTML = getQueryStringValue("emailAddress");
+</script>
+
+<script type="text/javascript">
+    function jump() {
+      var selected = document.getElementsByName('branching');
+
+    for(var i=0; i<selected.length; i++) {
+      var value = selected[i].value;
+      if (selected[i].checked) {
+        if (value === 'yes') {
+          window.location.href = 'check-your-email-address.html' + window.location.search;
+        } else {
+          window.location.href = 'enter-account-details.html';
+        }
+      } 
+    }
+  }
+</script>
 
 </body>
 </html>

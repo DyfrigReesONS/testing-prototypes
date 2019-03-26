@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Enter account details | Survey Data Collection</title>
+  <title>Enter enrolment code | Survey Data Collection</title>
   <meta name="author" content="Survey Data Collection team for ONS" />
   <meta name="description" content="ONS Business Surveys" />
   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
@@ -16,8 +16,7 @@
 	<link rel="manifest" href="../img/favicons/manifest.json">
   <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/v2.0.0/css/responsive.css">
-  <link rel="stylesheet" type="text/css" href="https://ons-design-system.netlify.com/css/responsive.css">
-	<link rel="stylesheet" href="../css/internal-main.css" media="all">
+	<link rel="stylesheet" href="./css/internal-main.css" media="all">
 	<!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <![endif]-->
@@ -25,10 +24,6 @@
   <script nonce="5lO8T0S8jHjwtrtd">document.documentElement.className = document.documentElement.className.replace('no-js','has-js')</script>
   <!--<![endif]-->
 </head>
-
-<style type="text/css">
-  
-</style>
 
 <body>
 
@@ -81,91 +76,24 @@
     <div class="grid grid--gutterless">
         <div class="grid__col col-12@s u-mb-m">
             <main role="main" id="main" class="page__main">
-
               <section>
-                <div class="u-mb-s">
-                  <a href="../index.html">Previous</a>
-                </div>
-
-                <div class="panel panel--error u-mb-m">
-                  <div class="panel__header">
-                    <div class="u-fs-r--b">This page has 1 error</div>
-                  </div>
-                  <div class="panel__body">
-                    <p>This <strong>must be corrected</strong> to continue.</p>
-                    <ul class="list list--bare">
-                      <li class="list__item ">
-                        1) <a href="#container-test-number" class="js-inpagelink">
-                          Enter a phone number, like 01632 960 001, 07700 900 982 or +44 1632 960000.
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <form id="enrolment-code" action="" method="GET" class="form">
+                <form id="enrolment-code" action="confirm-survey.html" method="GET" class="form">
                   <input id="csrf_token" name="csrf_token" type="hidden" value="">
-                  <h1 class="u-fs-l">Enter your account details</h1>
-                  <h2 class="section__title u-fs-m">Your name</h2>
+                  <h1 class="u-fs-l">Create an account</h1>
                   <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">First name</label>
-                    <input class="input input--text input-type__input" id="firstName" name="firstName" type="text" value="">
-                  </div>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Last name</label>
-                    <input class="input input--text input-type__input" id="lasttName" name="lastName" type="text" value="">
-                  </div>
-
-                  <h2 class="section__title u-fs-m">Email address</h2>
-                  <p>We'll send you an email so you can activate your account</p>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Enter your email address</label>
-                    <input class="input input--text input-type__input" id="emailAddress" name="emailAddress" type="text" value="">
-                  </div>
-
-                  <h2 class="section__title u-fs-m">Create a password</h2>
-                  <p>Your password must have:</p>
-                  <ul>
-                    <li>at least 8 characters </li>
-                    <li>at least one symbol (eg ?!£%) </li>
-                    <li>at least one capital letter</li>
-                    <li>at least one number</li>
-                  </ul>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Create a password</label>
-                    <input class="input input--text input-type__input js-new-password" id="password" name="" type="password" value="">
-                  </div>
-                  <div class="field u-mb-m">
-                    <label class="label" for="enrolment_code">Re-type your password</label>
-                    <input class="input input--text input-type__input js-confirm-new-password" id="passwordRetype" name="" type="password" value="">
-                  </div>
-
-                  <h2 class="section__title u-fs-m">Phone number</h2>
-                  <p>We'll use this number if we need to discuss any survey information provided</p>
-                  <div class="panel panel--error panel--simple u-mb-m">
-                    <div class="panel__body">
-                      <ul id="container-test-number" class="list list--bare list--errors u-mb-s">
-                        <li class="list__item ">Enter a phone number, like 01632 960 001, 07700 900 982 or +44 1632 960000</li>
-                      </ul> 
-                      <div class="field">
-                        <label class="label" for="enrolment_code">Enter your phone number
-                          <br>
-                          <span class="label__description">For international numbers include the country code</span>
-                        </label>
-                        <input class="input input--text input-type__input" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel" value="44-0808-157-0192">
-                      </div>
-                    </div>
+                    <label class="label" for="enrolment_code">Enrolment Code</label>
+                    <span class="label__description u-fs-s">You'll find this in the letter we sent you</span>
+                    <input class="input input--text input-type__input" id="ENROLEMENT_CODE_FIELD" id="enrolmentCode" name="enrolmentCode" type="text" value="">
                   </div>
 
                   <div class="btn-group">
-                    <button type="submit" class="btn btn-group__btn u-mb-s">Review account details</button>
+                    <button type="submit" class="btn btn-group__btn u-mb-s">Continue</button>
                   </div>
                   <div class="u-mb-m">
-                    <a href="../index.html">Cancel and return to sign in</a>
+                    <a href="sign-in.html">Cancel and return to sign in</a>
                   </div>
 
                 </form>
-
               </section>
             </main>
         </div>
